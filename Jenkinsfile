@@ -7,6 +7,9 @@ pipeline {
             }
         }
         stage('Sequential') {
+	        steps{
+	        	println "In Sequential 0"
+	        }
             environment {
                 FOR_SEQUENTIAL = "some-value"
             }
